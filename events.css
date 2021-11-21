@@ -1,0 +1,129 @@
+:root{
+    --color-0: #00629b;
+    --color: #666;
+}
+
+
+/* events css */
+
+
+.wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+  }
+
+.wrapper h1{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--color-0);
+}
+.wrapper .title_txt{
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--color);
+    padding-bottom: 50px;
+}
+
+  .wrapper .center-line{
+    position: absolute;
+    height: 90%;
+    width: 4px;
+    background: var(--color);
+    left: 50%;
+  }
+  .wrapper .row{
+    display: flex;
+  }
+  .wrapper .row-1{
+    justify-content: flex-start;
+  }
+  .wrapper .row-2{
+    justify-content: flex-end;
+  }
+  .wrapper .row section{
+    background: #fff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+  }
+
+  .row section .icon,
+  .center-line {
+    position: absolute;
+    background: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color-0);
+    font-size: 17px;
+  }
+  .center-line {
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+  }
+  .row-1 section .icon{
+    top: 15px;
+    right: -60px;
+  }
+  .row-2 section .icon{
+    top: 15px;
+    left: -60px;
+  }
+  .row section .details,
+  .row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row section .details .title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-0);
+  }
+  .row section .details span{
+      font-size: 2rem;
+      color: var(--color-0);
+  }
+
+  .row section .txt{
+    margin: 10px 0 17px 0;
+    font-size: 1.7rem;
+    color: var(--color);
+  }
+
+  .row section .txt span{
+      color: var(--color-0);
+      font-size: 2rem;
+  }
+  @media(max-width: 790px){
+    .wrapper .center-line{
+      left: 40px;
+    }
+    .wrapper .row{
+      margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section{
+      width: 100%;
+    }
+    .row-1 section .icon{
+      left: -60px;
+    }
+  }
+  @media(max-width: 440px){
+    .wrapper .center-line,
+    .row section .icon{
+      display: none;
+    }
+    .wrapper .row{
+      margin: 10px 0;
+    }
+  }
+
+  
